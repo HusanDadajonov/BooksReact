@@ -1,0 +1,41 @@
+.categories{
+
+    &__btn-list{
+        max-width: 860px;
+        margin: 0 auto;
+    }
+
+    &__title{
+        font-size: 31px;
+        line-height: 34px;
+        color: #c9ac8c;       
+        text-transform: uppercase; 
+        font-family: "Cormorant Garamond", serif;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &__btn-item{
+        &:not(:last-child){
+            margin-right: 50px;
+        }
+
+        &:hover button {
+            color: #c9ac8c;
+        }
+    }
+
+    &__btn-item--active button{
+        color: #c9ac8c;
+    }
+
+    &__btn{
+        transition: all 0.4s ease;
+        padding: 10px;
+        border: none;
+        background: none;
+        font-size: 20px;
+        line-height: 20px;
+        color: rgba(255, 255, 255, 0.6);
+    }
+}

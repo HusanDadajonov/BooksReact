@@ -1,0 +1,31 @@
+.form{
+    &__inp{
+        width: 330px;
+        padding: 12px 10px 12px 20px;
+        background: #fff;
+        border: 1px solid #b4b4bb;
+        box-sizing: border-box;
+        border-radius: 10px;
+        margin-bottom: 16px;
+
+
+            
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+
+
+        &:focus{
+            outline: none;
+            border-color: #dfbe07;
+        }
+
+        &::placeholder{
+            font-size: 14px;
+            line-height: 16px;
+            color: #aaa;
+        }
+    }
+}

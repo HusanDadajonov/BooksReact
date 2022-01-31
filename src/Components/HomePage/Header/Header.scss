@@ -1,0 +1,98 @@
+.header{
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    &__logo{
+        font-size: 25px;
+        line-height: 144.4%;
+        color: #c9ac8c;
+        text-decoration: none;
+        transition: all 0.4s ease;
+        text-transform: uppercase;
+        font-family: 'Cormorant Garamond', serif;
+
+        &:hover{
+            color: #fadfc2;
+        }
+    }
+
+    &__wrap{
+        margin-left: auto
+    }
+
+    &__account{
+        margin-left: 170px;
+    }
+
+    &__btn{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        border: none;
+        background: none;
+        margin-right: 7px;
+    }
+
+    &__img{
+        position:absolute;
+        width: 100%;
+        height: 100%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        object-fit: cover;
+    }   
+}
+
+.nav{
+    &__list{
+        margin: 0;
+        padding: 0;
+    }
+
+
+    &__item{
+        position: relative;
+
+        &:not(:last-child){
+            margin-right: 20px;
+        }
+
+        
+    }
+
+    &__link{
+        padding: 10px;
+        font-weight: 300;
+        font-size: 16px; 
+        line-height: 144.4%;
+        color: #fff;
+        transition: all 0.4s ease;
+
+        &::before{
+            content: "";
+            position:absolute;
+            width: 0%;
+            height: 0;
+            background: #b9982a;
+            bottom: -32px;
+            height: 2px;
+            left: 0;
+            transition: all 0.4s ease;
+        }
+
+        &:hover::before{
+            width: 100%;
+        }
+
+        &:hover{
+            color: #e2e2e2;
+        }
+    }
+
+    &__item-active::before{
+        width: 100%;
+    }
+}

@@ -1,0 +1,55 @@
+.cards{
+    &__list{
+        padding: 35px 0 0 0;
+        display: grid;
+        grid-template-columns: repeat(6,165px);
+        grid-gap: 35px;
+    }
+
+    &__item {
+        max-width: 165px;
+        padding: 0;
+
+        margin-bottom: 35px;
+    }
+
+    &__img-wrap{
+        width: 100%;
+        height: 245px;
+        border-radius: 15px;
+        overflow: hidden;
+        margin-bottom: 15px;
+    }
+
+    &__img{
+        width: 100%;
+        height: 100%;
+    }
+
+    &__title{
+        font-size: 20px;
+        line-height: 22px;
+        color: #c9ac8c;
+        font-family: "Cormorant Garamond", serif;
+        text-transform: uppercase;
+        margin-bottom: 2px;
+    }
+
+    &__author,
+    &__bottom-block{
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 144.4%;
+        color: rgba(255, 255, 255, 0.6);
+        margin-bottom: 4px;
+    }
+
+
+    &__item svg{
+        margin-right: 8px;
+    }
+
+    &__doc{
+        margin: 0 4px;
+    }
+}
